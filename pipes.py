@@ -2,8 +2,9 @@ import random
 import pygame
 
 class Pipes:
-    def __init__(self):
-        self.height = random.randint(50, 350)
+    def __init__(self, name):
+        self.name = name
+        self.height = random.randint(110, 240)
         self.width = 50
         self.gap = 170
         self.spaceBetweenPipes = 300
@@ -20,7 +21,7 @@ class Pipes:
         bottomPipePosition = (self.xPos, self.yPos + self.height + self.gap)
 
         topImg = pygame.transform.scale(topImg, (self.width, self.height))
-        bottomImg = pygame.transform.scale(bottomImg, (self.width, 700 - self.yPos - self.height - self.gap))
+        bottomImg = pygame.transform.scale(bottomImg, (self.width, 577 - self.yPos - self.height - self.gap))
 
         screen.blit(topImg, topPipePosition)
         screen.blit(bottomImg, bottomPipePosition)

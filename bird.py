@@ -8,7 +8,7 @@ class Bird:
         self.width = 40
         self.color = (255, 255, 0)
         self.xPos = 150
-        self.yPos = 400
+        self.yPos = 200
         self.isFlying = False
         self.initYPos = self.yPos
 
